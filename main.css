@@ -48,6 +48,9 @@ h5	{
 	font-size:15px;
 }
 
+h6	{
+	font-size:12px;
+}
 #content {
 	width: 400px;
 	margin: 40px auto 0 auto;
@@ -94,6 +97,11 @@ h5	{
 	border-bottom:2px solid black;
 	text-align: left;
 }
+
+.tbl_heading:hover {
+	cursor: pointer;
+}
+
 
 tr:nth-child(even) {
 	background-color:#CCC;

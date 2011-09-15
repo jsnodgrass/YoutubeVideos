@@ -24,5 +24,5 @@ ini_set("display_errors", 1);
 <script type="text/javascript" src="jscript/main.js"></script>
 
 <?php    
-include("footer.php")
+include("footer.php");
 ?>

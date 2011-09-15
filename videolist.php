@@ -13,14 +13,18 @@ include_once("functions.php");
 
         echo $GetResult;        
         //echo maplatlng($Location);
+        
+        
+        if (count($Location) !== 0)
+        {
 ?>
 
 <script type="text/javascript">
     initialize(<?php echo $lat;?>, <?php echo $long; ?>, <?php echo $zip; ?>);
 </script>
 
-<h2 class="center">Youtube videos near this location</h2>
-<table id="video_tbl">
+<h2 class="center">Youtube videos near this location</h2><h6 class="center">(click table head to sort)</h6>
+<table id="video_tbl" class="tablesorter">
     <thead>
     <tr>
         <th class="tbl_heading">Title</th>
@@ -31,6 +35,7 @@ include_once("functions.php");
     </thead>
     <tbody>
     <?php
+    
     $feedURL = "https://gdata.youtube.com/feeds/api/videos?location=$lat,$long!&location-radius=$rad&orderby=$order";
     
     $sxml = simplexml_load_file($feedURL);
@@ -93,3 +98,7 @@ include_once("functions.php");
     </tbody>
 
 </table>
+
+<?php
+        }
+?>

@@ -7,6 +7,9 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="jscript/jquery-1.6.3.min.js"> </script>
 <script type="text/javascript" src="jscript/spin.js"> </script>
+<script type="text/javascript" src="jscript/jquery-latest.js"></script>
+<script type="text/javascript" src="jscript/jquery.tablesorter.js"></script>
+
 
 	<script>
 		!window.jQuery && document.write('<script src="temp/jquery-1.6.3.min.js"><\/script>');

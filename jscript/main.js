@@ -12,10 +12,18 @@ var spinner = new Spinner({
 }) // Place in DOM node called     
     
 var updateBody = function(data) {
-    console.log(data);
+    //console.log(data);
     $("#list").html(data);
     $("#spinner_cont").hide();
+      
+    //console.log("Table Sorter");
+    $("#video_tbl").tablesorter({
+      sortList: [[3,0]]
+    });
 }
+
+
+
 
 function updateList() {
     
@@ -27,7 +35,7 @@ function updateList() {
         alert(err)
       }
       else {
-        
+        console.log("Main Page");
         $("#list").html("");
         $("#spinner_cont").show();
         spinner.spin(document.getElementById("spinner"));
@@ -35,9 +43,9 @@ function updateList() {
         var rad = $("#rad").val();
         var order = $("#orderlist").val();
         $.get("videolist.php?zip="+zip+"&rad="+rad+"mi&order="+order, updateBody);
-      }
+        }
     })
-    
+        
     return false;
 }
 
@@ -68,6 +76,7 @@ $("#search").click(updateList);
     
 function loadVideo(id)
 {
+    console.log("load video");
 	$.fancybox({
 	    'padding'			: 0,
             'autoScale'			: false,
@@ -86,3 +95,5 @@ function loadVideo(id)
 
     return false;
 }
+
+
