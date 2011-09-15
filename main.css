@@ -101,7 +101,15 @@ h6	{
 .tbl_heading:hover {
 	cursor: pointer;
 }
+.clickme, .clickme:visited, .clickme:active  {
+	color: #424242;
+	text-decoration: none;
+}
 
+.clickme:hover	{
+	text-decoration: underline;
+	color: #0A2A0A;
+}
 
 tr:nth-child(even) {
 	background-color:#CCC;
