@@ -1,0 +1,161 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+ tfoot, thead, tr, th, td {
+border:0pt none;
+font-family:inherit;
+font-size:100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0pt;
+padding:0pt;
+vertical-align:baseline;
+}
+
+html	{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4	{
+	font-size:40px;
+	color:black;
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;	
+}
+
+h1	{
+	font-weight:bold;
+}
+
+h2	{
+	font-size:30px;
+}
+
+h3	{
+	font-size:25px;
+}
+
+h4	{
+	font-size:20px;
+}
+
+h5	{
+	font-size:15px;
+}
+
+#content {
+	width: 400px;
+	margin: 40px auto 0 auto;
+	padding: 0 60px 30px 60px;
+	border: solid 1px #cbcbcb;
+	background: #fafafa;
+	-moz-box-shadow: 0px 0px 10px #cbcbcb;
+	-webkit-box-shadow: 0px 0px 10px #cbcbcb;
+}
+
+#search	{
+	margin-left: 40px;
+}
+
+
+.center	{
+	text-align:center;
+}
+
+.form {
+	width:700px; 
+	margin:10px auto; 
+	border:1px solid #CCC; 
+	padding:20px;
+}
+
+#results {
+	width:700px;
+	height:500px;
+	margin:10px auto; 
+	border:1px solid #CCC; 
+	padding:20px;
+}
+.badresult {
+	color: red;
+	width:700px;
+	height: 20px;
+	margin:10px auto; 
+	border:1px solid #CCC; 
+	padding:20px;
+}
+
+.tbl_heading	{
+	border-bottom:2px solid black;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color:#CCC;
+}
+
+.clickme  {
+	height:30px;
+	
+}
+
+ul li {
+	list-style:none; 
+	clear:both;
+	display: inline;
+}
+
+label {
+	float:left; 
+	margin-right:10px; 
+	width: 150px;
+}
+
+#spinner  {
+	margin: 300px auto;
+}
+
+#spinner_cont {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+#video_tbl  {
+	margin: 10px auto;
+	padding: 0;
+	width: 740px;
+	border: 1px solid black;
+}
+
+#header	{
+	width:700px; 
+	margin:10px auto; 
+	padding:20px;
+	margin-bottom:-10px;
+}
+
+#footer	{
+	color:#666666;
+	font-size:12px;
+	text-transform:lowercase;
+	text-align:center;
+	margin-top:-5px;
+}
+
+#map {
+	width:400px;
+	height:400px; 
+	padding:20px;
+	float: right;
+}
+
